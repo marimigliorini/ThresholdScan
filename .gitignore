@@ -1,0 +1,53 @@
+# A gitignore for Altera Quartus II that tries to ignore almost all of the
+# automatically Quartus-generated files. This primarily leaves the project,
+# settings, source, and constraint files to be added. The files ignored do not
+# include the bulk of the MegaFunction Wizard generated files which enables
+# a cloned repository to be used (usually) immediately without regenerating
+# Altera IP blocks.
+
+# Need to keep all HDL files and timing constraint files
+# *.vhd
+# *.v
+# *.sdc
+
+# ignore Quartus II generated folders
+db/
+incremental_db/
+simulation/
+timing/
+testbench/
+output_files/
+.qsys_edit/
+.tmp.drivedownload/
+*_sim/
+
+# ignore Quartus II generated files
+*sopc_*
+*.jdi
+*.ptf.*
+*.sof
+*.pof
+*.qws
+*.smsg
+*_inst.vhd
+*_generation_script*
+*.done
+*.txt
+*.qarlog
+*.rpt
+*.summary
+*.qws
+*.cmp
+*.eqn
+*.html
+*.jpg
+*.bak
+*.qar
+*.sopc_builder
+*example*
+*~
+*.sdc
+*.tcl
+*.pin
+*.mif
+*.hex
